@@ -7,7 +7,7 @@ const deleteUserData = require("../Controllers/deleteUserData");
 const router = express.Router();
 
 
-// create
+// api endpoints
 router.post("/create", UserCreate);
 router.get("/allUsers",allUser);
 router.get("/allUsers/:id",getSingleUser);

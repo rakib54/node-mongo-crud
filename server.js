@@ -12,7 +12,7 @@ mongoose.connect(process.env.MONGODB_URI, {
   .then(() => {
     console.log("DataBase Connection Successful");
     app.listen(port, () => {
-      console.log("app listening at: " + port);
+      console.log("App listening at: " + port);
     });
   })
   .catch(err => console.log(`MongoDb Connection Error: ${err}`));

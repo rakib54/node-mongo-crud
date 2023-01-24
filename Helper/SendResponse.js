@@ -1,9 +1,8 @@
-const SendResponse = (status, message,data, otherData) => {
+const SendResponse = (status, message,data) => {
   return {
     status,
     message,
     data: data || [],
-    ...otherData
   };
 };
 
